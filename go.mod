@@ -1,11 +1,13 @@
 module github.com/axieinfinity/bridge-migrations
 
-replace github.com/ethereum/go-ethereum => ../ronin
+replace github.com/axieinfinity/bridge-core => github.com/axieinfinity/bridge-core v0.1.2-0.20230119125048-8bcddcb4531e
+
+replace github.com/btcsuite/btcd => github.com/btcsuite/btcd/chaincfg/chainhash v1.0.2
 
 go 1.17
 
 require (
-	github.com/axieinfinity/bridge-core v0.1.2-0.20221031095024-7319520259bf
+	github.com/axieinfinity/bridge-core v0.1.2-0.20221221074635-375d6a0ea127
 	github.com/go-gormigrate/gormigrate/v2 v2.0.2
 	gorm.io/gorm v1.24.1
 )
@@ -15,12 +17,13 @@ require (
 	github.com/axieinfinity/bridge-contracts v0.0.0-20220731110242-d273b578b657 // indirect
 	github.com/axieinfinity/ronin-kms-client v0.0.0-20220805072849-960e04981b70 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/btcsuite/btcd v0.22.0-beta // indirect
+	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/deckarep/golang-set v1.8.0 // indirect
+	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1 // indirect
 	github.com/edsrzf/mmap-go v1.1.0 // indirect
-	github.com/ethereum/go-ethereum v1.10.21 // indirect
+	github.com/ethereum/go-ethereum v1.10.26 // indirect
 	github.com/gballet/go-libpcsclite v0.0.0-20191108122812-4678299bea08 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
@@ -43,14 +46,11 @@ require (
 	github.com/jackpal/go-nat-pmp v1.0.2 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
-	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/karalabe/usb v0.0.2 // indirect
 	github.com/kelseyhightower/envconfig v1.4.0 // indirect
-	github.com/mattn/go-runewidth v0.0.9 // indirect
+	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/mattn/go-sqlite3 v1.14.16 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/peterh/liner v1.2.2 // indirect
