@@ -13,7 +13,7 @@ type RequestWithdrawal struct {
 	TokenQuantity         string `json:"tokenQuantity" gorm:"column:token_quantity;not null"`
 	Fee                   string `json:"fee" gorm:"column:fee;not null"`
 	Transaction           string `json:"transaction" gorm:"column:transaction;index:idx_withdrawal_transaction;not null"`
-	Status                string `json:"status" gorm:"column:status"`
+	Status                string `json:"status" gorm:"column:status;index:idx_withdrawal_status"`
 	WithdrawalTransaction string `json:"withdrawalTransaction" gorm:"column:withdrawal_transaction"`
 }
 
